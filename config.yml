@@ -1,0 +1,33 @@
+url: https://www.youtube.com/feeds/videos.xml?channel_id=UCERhES8Kh7n29qtkoEl9MSQ
+defaults:
+  licence: CC-BY-NC-SA-4.0
+  status: active
+  types: 'video;tutorial;'
+  author: Jiarui Li
+  competency: beginner
+  prerequisites: No previous skills of experience required
+  keywords: 'hpc;'
+
+video_values:
+  'Register an account at DRAC':
+    keywords: 'Accounts;Introduction;'
+  'Introduction To Digital Research Alliance of Canada (DRAC)':
+    keywords: 'Introduction;'
+  'Job Performance Evaluation':
+    keywords: 'HPC;Slurm;Command line;CLI;Bash;Unix shell;scripting;'
+  'Submit The Batch Job':
+    keywords: 'HPC;Slurm;Command line;CLI;Bash;Unix shell;scripting;'
+  'Software Module On DRAC HPC Clusters':
+    keywords: 'HPC;CVMFS;Software;'
+  'Transfer Data With FileZilla':
+    keywords: 'HPC;Data transfer;'
+  'Transfer Data With rsync':
+    keywords: 'HPC;Data transfer;'
+  'Transfer Data With Globus':
+    keywords: 'HPC;Data transfer;'
+  'Access Arbutus Virtual Machine':
+    keywords: 'Cloud;VM;Virtual machines;'
+  'Introduction to cloud at Digital Research Alliance of Canada':
+    keywords: 'Cloud;VM;Virtual machines;'
+  'Logging into a remote server via SSH':
+    keywords: 'HPC;SSH;Command line;CLI;Bash;Unix shell;'
