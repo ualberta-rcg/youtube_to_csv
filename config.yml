@@ -5,7 +5,7 @@ defaults:
   types: 'video;tutorial;'
   author: Jiarui Li
   competency: beginner
-  prerequisites: No previous skills of experience required
+  prerequisites: No previous skills or experience required
   keywords: 'hpc;'
 
 video_values:
