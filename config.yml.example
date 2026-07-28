@@ -1,4 +1,19 @@
 url: https://www.youtube.com/feeds/videos.xml?channel_id=UCERhES8Kh7n29qtkoEl9MSQ
+
+# Note: URL, Title, and Description are mandatory.
+columns:
+  - URL
+  - Title
+  - Description
+  - Licence
+  - Status
+  - Author
+  - Published
+  - Keywords
+  - Types
+  - Competency
+  - Prerequisites
+
 defaults:
   licence: CC-BY-NC-SA-4.0
   status: active

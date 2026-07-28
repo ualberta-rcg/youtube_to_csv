@@ -1,22 +1,15 @@
 import yaml
 
 class Config:
-    CSV_HEADER = [
+    COLUMNS_REQUIRED = [
         'URL',
         'Title',
-        'Description',
-        'Licence',
-        'Status',
-        'Author',
-        'Published',
-        'Keywords',
-        'Types',
-        'Competency',
-        'Prerequisites'
+        'Description'
     ]
 
     def __init__(self, config_file_yml):
         self._config = self.load_config(config_file_yml)
+        self._csv_header = None
 
     def load_config(self, config_file_yml):
         with open(config_file_yml, "r") as file:
@@ -28,11 +21,21 @@ class Config:
 
     @property
     def attributes(self):
-        return list(map(lambda x: x.lower(), self.CSV_HEADER))
+        return list(map(lambda x: x.lower(), self.csv_header))
+
+    @property
+    def columns(self):
+        return self._config.get('columns', [])
 
     @property
     def csv_header(self):
-        return self.CSV_HEADER
+        if not self._csv_header:
+            self._csv_header = self.COLUMNS_REQUIRED.copy()
+            for column in self.columns:
+                if column not in self._csv_header:
+                    self._csv_header.append(column)
+
+        return self._csv_header
 
     @property
     def defaults(self):
