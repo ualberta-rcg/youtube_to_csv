@@ -17,3 +17,6 @@ The YAML file has the configuration for generating the CSV file. Specifically:
   * it also has some specific metadata values for each specific video (identified by title).
 
 The example YAML file will illustrate how this is formatted.
+
+For an example of an input and an output (and a Github action to generate the ouput)
+check out this repository: https://github.com/ualberta-rcg/explora_export
