@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube_to_csv"
+dynamic = ["version"]
+dependencies = ["feedparser", "pyyaml"]
+authors = [{name = "Chris Want"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools.dynamic]
+version = {attr = "youtube_to_csv.__version__"}
+
+[project.scripts]
+youtube_to_csv = "youtube_to_csv.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/ualberta-rcg/youtube_to_csv"
